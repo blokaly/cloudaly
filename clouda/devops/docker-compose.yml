@@ -1,0 +1,11 @@
+services:
+  clouda:
+    build: .
+    environment:
+      - DEBUG=false
+    env_file:
+      - .env
+    ports:
+      - 80:5000
+    volumes:
+      - "${EB_LOG_BASE_DIR}/clouda:/var/log"

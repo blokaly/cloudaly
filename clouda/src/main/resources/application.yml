@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: local
+  main:
+    banner-mode: "off"
+
+server:
+  port: 5000
+
+graphql:
+  packages: blokaly.cloudaly.clouda.graphql
